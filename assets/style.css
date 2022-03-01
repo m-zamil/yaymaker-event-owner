@@ -754,6 +754,7 @@ li.pricing-table__col-header--d {
   }
   .testmonial__card {
     margin-bottom: 2rem;
+    max-width: 320px;
   }
   .testmonial__text {
     transform: scale(1);
