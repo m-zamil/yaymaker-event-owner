@@ -154,7 +154,7 @@ img {
 
 .hero {
   background-image: url(./images/hero-bg-1-mobile.png);
-  padding-bottom: 17rem;
+  padding-bottom: 20rem;
   padding-top: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +184,6 @@ img {
 /*Offer*/
 
 .offer {
-  padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: var(--off-white);
 }
@@ -232,7 +231,7 @@ img {
   counter-reset: working-steps;
 }
 .working .container {
-  padding: 2rem 0;
+  padding: 0 0 2rem;
 }
 .working__steps {
   list-style: none;
@@ -249,7 +248,6 @@ img {
   display: flex;
   align-items: center;
   max-width: 330px;
-  gap: 1rem;
 }
 .working__steps li:last-child {
   margin-bottom: 2rem;
@@ -271,6 +269,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-right: 8px;
 }
 /* Choose path */
 .path {
@@ -306,6 +305,10 @@ img {
 }
 .pricing-table__col {
   width: 25%;
+  margin-right: 8px;
+}
+.pricing-table__col:last-child {
+  margin-right: 0;
 }
 .pricing-table__col ul {
   list-style: none;
@@ -480,7 +483,7 @@ li.pricing-table__col-header--d {
   }
   .hero {
     background-image: url(./images/hero-bg-1.jpg);
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   }
   .hero__content {
     width: 60%;
@@ -540,12 +543,14 @@ li.pricing-table__col-header--d {
   }
   .offer__cards {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 3rem;
+    flex-wrap: wrap;
   }
   .offer__card__img {
     margin-bottom: 1.5rem;
-    height: 130px;
+    height: 108px;
   }
   .offer__card--title {
     transform: scale(1);
@@ -568,6 +573,7 @@ li.pricing-table__col-header--d {
   .working .container {
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+    padding-top: 2rem;
   }
   .working .section__title {
     margin-left: 4.5rem;
@@ -591,6 +597,7 @@ li.pricing-table__col-header--d {
     flex: 50%;
     max-width: 425px;
     margin: 0;
+    font-weight: 400;
   }
   .working__steps li:last-child {
     margin-bottom: 0;
@@ -621,7 +628,6 @@ li.pricing-table__col-header--d {
 
   .pricing__table {
     align-items: flex-end;
-    gap: 10px;
   }
 
   .pricing__table__wrapper {
@@ -687,13 +693,17 @@ li.pricing-table__col-header--d {
 
   .pricing-table__col ul li {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 17px;
     max-width: initial;
     height: 36px;
   }
 
   .pricing__table .pricing-table__col {
     border-radius: 5px;
+    margin-right: 10px;
+  }
+  .pricing__table .pricing-table__col:last-child {
+    margin-right: 0;
   }
 
   .pricing__table .pricing-table__col:not(:first-child) {
@@ -715,10 +725,13 @@ li.pricing-table__col-header--d {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    padding: 30px 0;
     position: absolute;
     top: -65px;
     right: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .table-badge .light {
     font-weight: bold;
@@ -751,11 +764,13 @@ li.pricing-table__col-header--d {
   .testmonial__cards {
     display: flex;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
   }
   .testmonial__card {
     margin-bottom: 2rem;
     max-width: 320px;
   }
+
   .testmonial__text {
     transform: scale(1);
     font-size: 14px;
